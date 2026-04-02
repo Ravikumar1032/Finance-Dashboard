@@ -1,9 +1,9 @@
 // Dev by M. Ravikumar Naik
 
 import { createContext, useContext, useReducer, useEffect, useCallback, useMemo } from 'react';
-import { Transaction, Role, FilterState, Summary, Insights, Category } from '../types';
+import { Transaction, Role, FilterState, Summary, Insights } from '../types';
 import { api } from '../services/api';
-import { calculateSummary, calculateInsights, calculateCategoryBreakdown } from '../utils/calculations';
+import { calculateSummary, calculateInsights } from '../utils/calculations';
 
 // State types
 interface AppState {

@@ -4,7 +4,7 @@ import { Transaction } from '../../types';
 import { Card } from '../common/Card';
 import { TransactionItem } from './TransactionItem';
 import { useApp } from '../../context/AppContext';
-import { Receipt, FileSearch } from 'lucide-react';
+import { FileSearch } from 'lucide-react';
 
 interface TransactionListProps {
   onEdit: (tx: Transaction) => void;

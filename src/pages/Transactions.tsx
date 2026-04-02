@@ -1,7 +1,7 @@
 // Developed by M. Ravikumar Naik
 
 import { useState } from 'react';
-import { Plus, ArrowDownUp, Download } from 'lucide-react';
+import { Plus, Download } from 'lucide-react';
 import { Transaction } from '../types';
 import { useApp } from '../context/AppContext';
 import { Button } from '../components/common/Button';

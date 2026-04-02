@@ -1,6 +1,6 @@
 // Dev by M. Ravikumar Naik
 
-import { Menu, Eye, Shield, Bell, Search } from 'lucide-react';
+import { Menu, Eye, Shield, Bell } from 'lucide-react';
 import { useApp } from '../../context/AppContext';
 import { Role } from '../../types';
 import { useState } from 'react';

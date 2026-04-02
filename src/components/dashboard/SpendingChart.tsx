@@ -1,6 +1,6 @@
 // Developed by M. Ravikumar Naik
 
-import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip, Sector } from 'recharts';
+import { PieChart, Pie, Cell, ResponsiveContainer, Sector } from 'recharts';
 import { Card } from '../common/Card';
 import { calculateCategoryBreakdown } from '../../utils/calculations';
 import { formatCurrency } from '../../utils/formatters';
@@ -8,11 +8,11 @@ import { useApp } from '../../context/AppContext';
 import { PieChart as PieIcon } from 'lucide-react';
 import { useState, useCallback } from 'react';
 
-const RADIAN = Math.PI / 180;
+
 
 const renderActiveShape = (props: any) => {
   const {
-    cx, cy, innerRadius, outerRadius, startAngle, endAngle, fill, payload, percent, value,
+    cx, cy, innerRadius, outerRadius, startAngle, endAngle, fill, percent, value,
   } = props;
 
   return (
@@ -55,7 +55,7 @@ export function SpendingChart() {
     setActiveIndex(index);
   }, []);
 
-  const totalExpenses = categoryData.reduce((sum, d) => sum + d.amount, 0);
+
 
   return (
     <Card

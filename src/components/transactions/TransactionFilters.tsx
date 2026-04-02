@@ -18,7 +18,7 @@ const categories: Category[] = [
 ];
 
 export function TransactionFilters() {
-  const { state, setFilters, resetFilters, filteredTransactions, totalFiltered } = useApp();
+  const { state, setFilters, resetFilters, totalFiltered } = useApp();
   const { filters } = state;
 
   const hasActiveFilters =
